@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDfb67c209d22d011061c0fe9bd6c8ee62</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>cdd96e1c076d01105d4cf0ef7c1ed0ae</scope_name>
+        <serialized_content>{"FlowDesigner:FDfb67c209d22d011061c0fe9bd6c8ee62":{},"FlowDesigner:FDfb67c209d22d011061c0fe9bd6c8ee62.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"10c416cd-e1cd-4ffc-baa0-0ad4b23af44b\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDfb67c209d22d011061c0fe9bd6c8ee62\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-06 21:42:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bf67c209072d01105d4cf0ef7c1ed062</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FDfb67c209d22d011061c0fe9bd6c8ee62</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
+        <sys_update_name>sys_complex_object_bf67c209072d01105d4cf0ef7c1ed062</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-06 21:42:54</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

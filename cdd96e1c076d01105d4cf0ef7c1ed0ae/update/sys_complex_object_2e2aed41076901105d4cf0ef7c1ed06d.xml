@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD6a2aed41ee690110dc71784657d10d6d</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>cdd96e1c076d01105d4cf0ef7c1ed0ae</scope_name>
+        <serialized_content>{"FlowDesigner:FD6a2aed41ee690110dc71784657d10d6d":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD6a2aed41ee690110dc71784657d10d6d.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Values\",\"mandatory\":\"true\",\"child_name\":\"value\",\"uiUniqueId\":\"e6eebf19-329e-4e9c-b956-0b6dcbf094f6\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD6a2aed41ee690110dc71784657d10d6d\",\"child_label\":\"Value\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"5\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"fbd64087-a6b3-45ac-bab3-0b0cee092564\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-06 19:35:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2e2aed41076901105d4cf0ef7c1ed06d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD6a2aed41ee690110dc71784657d10d6d</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
+        <sys_update_name>sys_complex_object_2e2aed41076901105d4cf0ef7c1ed06d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-06 19:35:01</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

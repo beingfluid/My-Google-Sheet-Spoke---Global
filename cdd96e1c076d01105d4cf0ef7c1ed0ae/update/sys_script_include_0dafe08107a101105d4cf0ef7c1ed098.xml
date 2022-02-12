@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>global.GoogleSheetsErrorHandlerGlobal</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>GoogleSheetsErrorHandlerGlobal</name>
+        <script><![CDATA[var GoogleSheetsErrorHandlerGlobal = Class.create();
+GoogleSheetsErrorHandlerGlobal.prototype = {
+    initialize: function() {},
+
+    commonErrors: function(response) {
+        var inErrors = {
+            PERMISSION_DENIED: "Google Sheets API has not been used",
+            INVALID_SPREADSHEET: "Requested entity was not found",
+            INVALID_ACCESS_TOKEN: "Request had invalid authentication credentials",
+            INVALID_RANGE: "Unable to parse range",
+            INVALID_UPDATE: "Requested writing within range",
+            SHEET_ALREADY_EXISTS: "addSheet: A sheet with the name",
+            INVALID_DEST_SPREADSHEET: "Invalid destinationSpreadsheetId",
+            DELETE_SHEET: "deleteSheet: No sheet with id:"
+        };
+
+        var outMessage = {
+            PERMISSION_DENIED: "Enable Google Sheets API for the project in app console.",
+            INVALID_SPREADSHEET: "Spreadsheet not found for given ID.",
+            UNKNOWN_ERROR: "Encountered an error. Check log for more details.",
+            INVALID_RANGE: "Invalid Sheet or Range.",
+            INVALID_ACCESS_TOKEN: "Invalid access token.",
+            SHEET_ALREADY_EXISTS: "Sheet already exists.",
+            INVALID_UPDATE: "Values dimension and specified Range do not match.",
+            INVALID_DEST_SPREADSHEET: "Destination spreadsheet not found for given ID.",
+            DELETE_SHEET: "Specified sheet not found."
+        };
+
+        var error_message;
+
+        try {
+            var error = response["error"]["message"];
+            if (error.includes(inErrors.PERMISSION_DENIED))
+                error_message = outMessage.PERMISSION_DENIED;
+            else if (error.includes(inErrors.SHEET_ALREADY_EXISTS))
+                error_message = outMessage.SHEET_ALREADY_EXISTS;
+            else if (error.includes(inErrors.INVALID_RANGE))
+                error_message = outMessage.INVALID_RANGE;
+            else if (error.includes(inErrors.INVALID_SPREADSHEET))
+                error_message = outMessage.INVALID_SPREADSHEET;
+            else if (error.includes(inErrors.INVALID_DEST_SPREADSHEET))
+                error_message = outMessage.INVALID_DEST_SPREADSHEET;
+            else if (error.includes(inErrors.DELETE_SHEET))
+                error_message = outMessage.DELETE_SHEET;
+            else if (error.includes(inErrors.INVALID_UPDATE))
+                error_message = outMessage.INVALID_UPDATE;
+            else if (error.includes(inErrors.INVALID_ACCESS_TOKEN))
+                error_message = outMessage.INVALID_ACCESS_TOKEN;
+            else {
+                gs.error(error);
+                error_message = outMessage.UNKNOWN_ERROR;
+            }
+
+        } catch (e) {
+            gs.error(e);
+            gs.error(response);
+            error_message = outMessage.UNKNOWN_ERROR;
+        }
+        return error_message;
+    },
+
+    type: 'GoogleSheetsErrorHandlerGlobal'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-06 15:20:21</sys_created_on>
+        <sys_id>0dafe08107a101105d4cf0ef7c1ed098</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>GoogleSheetsErrorHandlerGlobal</sys_name>
+        <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
+        <sys_update_name>sys_script_include_0dafe08107a101105d4cf0ef7c1ed098</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-06 15:22:34</sys_updated_on>
+    </sys_script_include>
+</record_update>

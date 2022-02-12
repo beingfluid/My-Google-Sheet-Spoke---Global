@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile">
+    <oauth_entity_profile action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <grant_type>authorization_code</grant_type>
+        <jwt_provider/>
+        <name>Google Sheets OAuth Profile.3</name>
+        <oauth_entity display_value="My Google Sheet Spoke - Global 2 OAuth">deeee08107a101105d4cf0ef7c1ed004</oauth_entity>
+        <sys_class_name>oauth_entity_profile</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-06 15:16:08</sys_created_on>
+        <sys_id>1eeee08107a101105d4cf0ef7c1ed008</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Google Sheets OAuth Profile.3</sys_name>
+        <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
+        <sys_update_name>oauth_entity_profile_1eeee08107a101105d4cf0ef7c1ed008</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-06 15:16:08</sys_updated_on>
+    </oauth_entity_profile>
+</record_update>
