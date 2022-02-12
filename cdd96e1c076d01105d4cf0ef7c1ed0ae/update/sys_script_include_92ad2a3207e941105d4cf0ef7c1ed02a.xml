@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>global.MyCustomAccelerator</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>MyCustomAccelerator</name>
+        <script><![CDATA[var MyCustomAccelerator = Class.create();
+MyCustomAccelerator.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    /*
+	processPhaseClient: function() {
+        var phase = this.getParameter('sysparm_phase');
+        var mbrAppId = this.getParameter('sysparm_mbr_app_id');
+        var appSysId = this.getParameter('sysparm_app_sys_id');
+        var updSetId = this.getParameter('sysparm_upd_set_id');
+        var origAppId = this.getParameter('sysparm_orig_app_id');
+        return this.processPhase(phase, mbrAppId, appSysId, updSetId, origAppId);
+    },
+ 
+    processPhase: function(phase, mbrAppId, appSysId, updSetId, origAppId) {
+        return 'success';
+    },
+	
+	*/
+    processPhaseClient: function() {
+        var jsonString = this.getParameter('sysparm_json');
+        var answer = {};
+        try {
+            answer = JSON.parse(jsonString);
+            if (answer.phase == 3) {
+                answer = this.processError(answer, 'Unparsable JSON string parameter: ' + jsonString);
+            }
+            answer = this.processPhase(answer);
+        } catch (e) {
+            answer = this.processError({}, 'Unparsable JSON string parameter: ' + jsonString);
+        }
+
+        return JSON.stringify(answer);
+
+    },
+
+    processPhase: function(answer) {
+        if (answer.phase == 1) {
+            answer = this.processPhase1(answer);
+        } else if (answer.phase == 2) {
+            answer = this.processPhase2(answer);
+        } else if (answer.phase == 3) {
+            answer = this.processPhase3(answer);
+        } else if (answer.phase == 4) {
+            answer = this.processPhase4(answer);
+        } else if (answer.phase == 5) {
+            answer = this.processPhase5(answer);
+        } else if (answer.phase == 6) {
+            answer = this.processPhase6(answer);
+        } else {
+            answer = this.processError(answer, 'Invalid phase error; invalid phase: ' + phase);
+        }
+
+        return answer;
+    },
+
+    processPhase1: function(answer) {
+        return answer;
+    },
+
+    processPhase2: function(answer) {
+        return answer;
+    },
+
+    processPhase3: function(answer) {
+        return answer;
+    },
+
+    processPhase4: function(answer) {
+        return answer;
+    },
+
+    processPhase5: function(answer) {
+        return answer;
+    },
+
+    processPhase6: function(answer) {
+        return answer;
+    },
+
+    processError: function(answer, message) {
+        gs.addErrorMessage(message);
+        answer.error = message;
+        return answer;
+    },
+
+
+    type: 'MyCustomAccelerator'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-12 10:59:16</sys_created_on>
+        <sys_id>92ad2a3207e941105d4cf0ef7c1ed02a</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>MyCustomAccelerator</sys_name>
+        <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
+        <sys_update_name>sys_script_include_92ad2a3207e941105d4cf0ef7c1ed02a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-12 12:08:06</sys_updated_on>
+    </sys_script_include>
+</record_update>
