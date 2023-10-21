@@ -4,9 +4,9 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build>glide-rome-06-23-2021__patch5-12-15-2021_01-04-2022_2221.zip</compiler_build>
         <copied_from/>
         <copied_from_name/>
         <description/>
@@ -16,6 +16,7 @@
         <name>Airline Points</name>
         <natlang/>
         <outputs/>
+        <pre_compiled>false</pre_compiled>
         <remote_trigger_id>68f6e2a407a981105d4cf0ef7c1ed0b0</remote_trigger_id>
         <run_as>user</run_as>
         <run_with_roles/>
@@ -29,7 +30,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>46e566e007a981105d4cf0ef7c1ed022</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Airline Points</sys_name>
         <sys_overrides/>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
@@ -37,7 +38,7 @@
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
         <sys_update_name>sys_hub_flow_46e566e007a981105d4cf0ef7c1ed022</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-02-05 10:43:36</sys_updated_on>
+        <sys_updated_on>2023-10-21 05:50:47</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=46e566e007a981105d4cf0ef7c1ed022"/>
@@ -67,9 +68,11 @@
     <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
         <active>true</active>
         <business_calendar/>
+        <can_iterate>false</can_iterate>
         <condition/>
         <conditional>false</conditional>
         <entered_time/>
+        <max_drift/>
         <name>Trigger:68f6e2a407a981105d4cf0ef7c1ed0b0</name>
         <offset/>
         <offset_type>0</offset_type>
@@ -82,6 +85,8 @@
         <run_time/>
         <run_type>once</run_type>
         <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('68f6e2a407a981105d4cf0ef7c1ed0b0');]]></script>
+        <source_filter/>
+        <source_table/>
         <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-02-05 10:43:36</sys_created_on>
@@ -98,6 +103,7 @@
         <trigger display_value="">68f6e2a407a981105d4cf0ef7c1ed0b0</trigger>
         <upgrade_safe>true</upgrade_safe>
     </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=46e566e007a981105d4cf0ef7c1ed022"/>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=46e566e007a981105d4cf0ef7c1ed022^sys_idNOT INc7d6ee6407a981105d4cf0ef7c1ed00e"/>
     <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -132,6 +138,8 @@
         <value>2022-02-05 16:10:00</value>
         <variable display_value="Run in">92afcd94c32222002841b63b12d3aee8</variable>
     </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_0a76e504c32222002841b63b12d3aeac^id=c7d6ee6407a981105d4cf0ef7c1ed00e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=46e566e007a981105d4cf0ef7c1ed022"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=46e566e007a981105d4cf0ef7c1ed022^sys_idNOT INcee566e007a981105d4cf0ef7c1ed023"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>46e566e007a981105d4cf0ef7c1ed022</id>
@@ -144,13 +152,17 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:39:04</sys_updated_on>
     </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=cee566e007a981105d4cf0ef7c1ed023"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=46e566e007a981105d4cf0ef7c1ed022"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=46e566e007a981105d4cf0ef7c1ed022"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=46e566e007a981105d4cf0ef7c1ed022"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=46e566e007a981105d4cf0ef7c1ed022^sys_idNOT INc7d6ee6407a981105d4cf0ef7c1ed027"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_type display_value="mygooglesheetspokeglobal Read Write Action">87b2e26c076981105d4cf0ef7c1ed08f</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
-        <compiled_snapshot/>
         <display_text/>
         <flow display_value="Airline Points">46e566e007a981105d4cf0ef7c1ed022</flow>
         <order>1</order>
@@ -167,29 +179,22 @@
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=c7d6ee6407a981105d4cf0ef7c1ed027"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_87b2e26c076981105d4cf0ef7c1ed08f^id=c7d6ee6407a981105d4cf0ef7c1ed027"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=46e566e007a981105d4cf0ef7c1ed022^sys_idNOT IN24f6e2a407a981105d4cf0ef7c1ed0b2"/>
-    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
-        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"24f6e2a407a981105d4cf0ef7c1ed0b2","name":"plan","plan_signature":null}}</plan>
-        <plan_id>46e566e007a981105d4cf0ef7c1ed022</plan_id>
-        <snapshot>038f11b007edc1105d4cf0ef7c1ed076</snapshot>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-02-05 10:43:36</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
-        <sys_id>24f6e2a407a981105d4cf0ef7c1ed0b2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_overrides/>
-        <sys_scope/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-02-05 10:43:36</sys_updated_on>
-        <trigger display_value="">68f6e2a407a981105d4cf0ef7c1ed0b0</trigger>
-    </sys_flow_trigger_plan>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c7d6ee6407a981105d4cf0ef7c1ed027"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c7d6ee6407a981105d4cf0ef7c1ed027"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=46e566e007a981105d4cf0ef7c1ed022"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=46e566e007a981105d4cf0ef7c1ed022"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=46e566e007a981105d4cf0ef7c1ed022"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=46e566e007a981105d4cf0ef7c1ed022"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_46e566e007a981105d4cf0ef7c1ed022"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_46e566e007a981105d4cf0ef7c1ed022"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_46e566e007a981105d4cf0ef7c1ed022"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_46e566e007a981105d4cf0ef7c1ed022"/>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -260,6 +265,8 @@
         <value>2022-02-05 16:10:00</value>
         <variable display_value="Run in">92afcd94c32222002841b63b12d3aee8</variable>
     </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_0a76e504c32222002841b63b12d3aeac^id=a3e6a2a407a981105d4cf0ef7c1ed099"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=53e6a2a407a981105d4cf0ef7c1ed034"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=53e6a2a407a981105d4cf0ef7c1ed034^sys_idNOT IN57e6a2a407a981105d4cf0ef7c1ed035"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>53e6a2a407a981105d4cf0ef7c1ed034</id>
@@ -272,13 +279,17 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:43:31</sys_updated_on>
     </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=57e6a2a407a981105d4cf0ef7c1ed035"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=53e6a2a407a981105d4cf0ef7c1ed034"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=53e6a2a407a981105d4cf0ef7c1ed034"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=53e6a2a407a981105d4cf0ef7c1ed034"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=53e6a2a407a981105d4cf0ef7c1ed034^sys_idNOT IN63e6a2a407a981105d4cf0ef7c1ed098"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_type display_value="mygooglesheetspokeglobal Read Write Action">0cc562e007a981105d4cf0ef7c1ed091</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
-        <compiled_snapshot>87b2e26c076981105d4cf0ef7c1ed08f</compiled_snapshot>
         <display_text/>
         <flow display_value="Airline Points">53e6a2a407a981105d4cf0ef7c1ed034</flow>
         <order>1</order>
@@ -295,8 +306,38 @@
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=63e6a2a407a981105d4cf0ef7c1ed098"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_0cc562e007a981105d4cf0ef7c1ed091^id=63e6a2a407a981105d4cf0ef7c1ed098"/>
-    <sys_hub_flow action="update">
+    <sys_hub_input_scripts action="delete_multiple" query="instance=63e6a2a407a981105d4cf0ef7c1ed098"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=63e6a2a407a981105d4cf0ef7c1ed098"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=53e6a2a407a981105d4cf0ef7c1ed034"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=53e6a2a407a981105d4cf0ef7c1ed034"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=53e6a2a407a981105d4cf0ef7c1ed034"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=53e6a2a407a981105d4cf0ef7c1ed034"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_53e6a2a407a981105d4cf0ef7c1ed034"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_53e6a2a407a981105d4cf0ef7c1ed034"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_53e6a2a407a981105d4cf0ef7c1ed034"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_53e6a2a407a981105d4cf0ef7c1ed034"/>
+    <sys_hub_flow action="UPDATE">
         <sys_id>46e566e007a981105d4cf0ef7c1ed022</sys_id>
         <latest_snapshot>53e6a2a407a981105d4cf0ef7c1ed034</latest_snapshot>
+        <compiler_build>glide-rome-06-23-2021__patch5-12-15-2021_01-04-2022_2221.zip</compiler_build>
     </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=46e566e007a981105d4cf0ef7c1ed022^sys_idNOT IN24f6e2a407a981105d4cf0ef7c1ed0b2"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"24f6e2a407a981105d4cf0ef7c1ed0b2","name":"plan","plan_signature":null}}</plan>
+        <plan_id>46e566e007a981105d4cf0ef7c1ed022</plan_id>
+        <snapshot>038f11b007edc1105d4cf0ef7c1ed076</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-05 10:43:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>24f6e2a407a981105d4cf0ef7c1ed0b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-05 10:43:36</sys_updated_on>
+        <trigger display_value="">68f6e2a407a981105d4cf0ef7c1ed0b0</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=46e566e007a981105d4cf0ef7c1ed022"/>
 </record_update>

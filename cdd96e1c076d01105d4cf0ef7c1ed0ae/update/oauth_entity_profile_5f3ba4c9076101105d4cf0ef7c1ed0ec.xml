@@ -5,6 +5,7 @@
         <jwt_provider/>
         <name>Google Sheets OAuth Profile.2</name>
         <oauth_entity display_value="My Google Sheet Spoke - Global OAuth.1">573ba4c9076101105d4cf0ef7c1ed0e9</oauth_entity>
+        <saml2_assertion_producer/>
         <sys_class_name>oauth_entity_profile</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-02-06 15:00:06</sys_created_on>

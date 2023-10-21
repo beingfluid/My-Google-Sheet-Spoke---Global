@@ -13,8 +13,10 @@
         <comments/>
         <default_grant_type>authorization_code</default_grant_type>
         <id_token_lifespan>86400</id_token_lifespan>
+        <login_url/>
         <logo_url/>
         <message_signature_lifespan>60</message_signature_lifespan>
+        <mobile_client>false</mobile_client>
         <name>My Google Sheet Spoke - Global OAuth</name>
         <oauth_api_script display_value="OAuthUtilGoogleSheets">83c4fcfe0b301010ba266f3463673a08</oauth_api_script>
         <protocol_name/>

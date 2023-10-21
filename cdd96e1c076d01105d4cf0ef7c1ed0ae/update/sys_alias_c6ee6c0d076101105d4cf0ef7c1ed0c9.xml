@@ -3,6 +3,7 @@
         <configuration_template display_value="Google Sheets Configuration - Global">d453e80d072101105d4cf0ef7c1ed08a</configuration_template>
         <connection_type>http_connection</connection_type>
         <id>My_Google_Sheet_Spoke___Global_2_Connect</id>
+        <is_internal>false</is_internal>
         <multiple_connections>false</multiple_connections>
         <name>My Google Sheet Spoke - Global 2 Connect</name>
         <parent display_value="GoogleSheets___Global">8bd4a8cd072101105d4cf0ef7c1ed042</parent>

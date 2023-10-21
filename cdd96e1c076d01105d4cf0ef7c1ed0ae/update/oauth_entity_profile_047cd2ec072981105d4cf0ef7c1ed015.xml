@@ -5,6 +5,7 @@
         <jwt_provider display_value="mygooglesheetspokeglobal_JWT_Provider">ddfad62c072981105d4cf0ef7c1ed001</jwt_provider>
         <name>mygooglesheetspokeglobal_OAuth_Provider default_profile</name>
         <oauth_entity display_value="mygooglesheetspokeglobal_OAuth_Provider">5aab1e6c072981105d4cf0ef7c1ed00f</oauth_entity>
+        <saml2_assertion_producer/>
         <sys_class_name>oauth_entity_profile</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-02-05 09:57:42</sys_created_on>
