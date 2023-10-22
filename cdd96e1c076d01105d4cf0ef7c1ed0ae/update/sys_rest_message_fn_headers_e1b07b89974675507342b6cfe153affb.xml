@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers">
+    <sys_rest_message_fn_headers action="INSERT_OR_UPDATE">
+        <name>Content-Type</name>
+        <rest_message_function display_value="Copy Drive File">4db0bb89974675507342b6cfe153af0d</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_headers</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-21 14:28:28</sys_created_on>
+        <sys_id>e1b07b89974675507342b6cfe153affb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Content-Type</sys_name>
+        <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
+        <sys_update_name>sys_rest_message_fn_headers_e1b07b89974675507342b6cfe153affb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-21 14:28:28</sys_updated_on>
+        <value>application/json</value>
+    </sys_rest_message_fn_headers>
+</record_update>

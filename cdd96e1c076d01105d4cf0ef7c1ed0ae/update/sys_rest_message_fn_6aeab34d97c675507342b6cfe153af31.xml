@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content>{&#13;
+  "requests": [&#13;
+    {&#13;
+      "insertDimension": {&#13;
+        "range": {&#13;
+          "sheetId": 0,&#13;
+          "dimension": "ROWS",&#13;
+          "startIndex": 14,&#13;
+          "endIndex": 17&#13;
+        },&#13;
+        "inheritFromBefore": true&#13;
+      }&#13;
+    },&#13;
+    {&#13;
+      "copyPaste": {&#13;
+        "source": {&#13;
+          "sheetId": 0,&#13;
+          "startRowIndex": 13,&#13;
+          "endRowIndex": 14&#13;
+        },&#13;
+        "destination": {&#13;
+          "sheetId": 0,&#13;
+          "startRowIndex": 14,&#13;
+          "endRowIndex": 17&#13;
+        },&#13;
+        "pasteType": "PASTE_FORMAT",&#13;
+        "pasteOrientation": "NORMAL"&#13;
+      }&#13;
+    }&#13;
+  ]&#13;
+}</content>
+        <function_name>Add Empty Rows</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>My Google Sheet Spoke - Global [ Add Empty Rows ]</qualified_name>
+        <rest_endpoint>https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}:batchUpdate</rest_endpoint>
+        <rest_message display_value="My Google Sheet Spoke - Global">251f6ea007e981105d4cf0ef7c1ed068</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-21 15:12:18</sys_created_on>
+        <sys_id>6aeab34d97c675507342b6cfe153af31</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Add Empty Rows</sys_name>
+        <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
+        <sys_update_name>sys_rest_message_fn_6aeab34d97c675507342b6cfe153af31</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-21 15:40:14</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

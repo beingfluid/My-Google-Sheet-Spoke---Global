@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>role</name>
+        <rest_message_function display_value="Create File or Folder Permission">2e5593cd97ce35507342b6cfe153af5a</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-21 12:32:36</sys_created_on>
+        <sys_id>5f56d781970275507342b6cfe153af3c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>role</sys_name>
+        <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_5f56d781970275507342b6cfe153af3c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-21 12:37:36</sys_updated_on>
+        <type>string</type>
+        <value>writer</value>
+    </sys_rest_message_fn_parameters>
+</record_update>

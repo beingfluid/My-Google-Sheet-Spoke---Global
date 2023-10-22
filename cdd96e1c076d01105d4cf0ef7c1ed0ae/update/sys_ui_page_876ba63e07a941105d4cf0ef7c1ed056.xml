@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[var mbrAppId = gel('mbr_app_id').value;
+
+addLoadEvent(function() {  
+    onLoad();
+});
+
+/*
+function onLoad() {
+    var phase = 1;
+    var mbrAppId = gel('mbr_app_id').value;
+    var appSysId = gel('app_sys_id').value;
+    var updSetId = gel('upd_set_id').value;
+    var origAppId = gel('mbr_app_id').value;
+    processPhase(phase, mbrAppId, appSysId, updSetId, origAppId);
+}
+
+function processPhase(phase, mbrAppId, appSysId, updSetId, origAppId) {
+    var ga = new GlideAjax('ApplicationPublisher');
+    ga.addParam('sysparm_name', 'processPhaseClient');
+    ga.addParam('sysparm_phase', phase);
+    ga.addParam('sysparm_mbr_app_id', mbrAppId);
+    ga.addParam('sysparm_app_sys_id', appSysId);
+    ga.addParam('sysparm_upd_set_id', updSetId);
+    ga.addParam('sysparm_orig_app_id', origAppId);
+    ga.getXMLAnswer(function (answer) {
+        if (answer == 'success') {
+            hideElement('loading_' + phase);
+            showElement('success_' + phase);
+            phase++;
+            if (phase < 7) {
+                showElement('phase_' + phase);
+                processPhase(phase, mbrAppId, appSysId, updSetId, origAppId);
+            } else {
+                showElement('done_button');
+            }
+        } else {
+            showElement('done_button');
+        }
+    });
+}
+*/
+function onLoad() {
+    var answer = {"test_key":"test_value"};
+    answer.phase = 1;
+//     answer.mbrAppId = gel('mbr_app_id').value;
+//     answer.appSysId = gel('app_sys_id').value;
+//     answer.updSetId = gel('upd_set_id').value;
+//     answer.origAppId = gel('mbr_app_id').value;
+    processPhase(answer);
+}
+
+function processPhase(answer) {
+    var ga = new GlideAjax('MyCustomAccelerator');
+    ga.addParam('sysparm_name', 'processPhaseClient');
+    ga.addParam('sysparm_json', JSON.stringify(answer));
+    ga.getXMLAnswer(function (jsonString) {
+        hideElement('loading_' + answer.phase);
+        answer = JSON.parse(jsonString);
+
+        if (answer.error) {
+            showElement('error_' + answer.phase);
+            showElement('done_button');
+        } else {
+            showElement('success_' + answer.phase);
+            answer.phase++;
+            if (answer.phase < 7) {
+                showElement('phase_' + answer.phase);
+                processPhase(answer);
+            } else {
+                showElement('done_button');
+            }
+        }
+    });
+}
+
+function showElement(elementName) {
+    var elem = gel(elementName);
+    elem.style.visibility = 'visible';
+    elem.style.display = '';
+}
+ 
+function hideElement(elementName) {
+    var elem = gel(elementName);
+    elem.style.visibility = 'hidden';
+    elem.style.display = 'none';
+}
+
+function onSubmit() {
+	this.nameField = gel('app_name');
+	this.descriptionField = gel('update_set_description');
+	this.versionField = gel('app_version');
+	this.existingVersions = gel('existing_versions').value;
+	this.includeDataField = gel('includeCB');
+	this.inferredUsName = "";
+	if (this.versionField.value.length > 0) {
+		this.inferredUsName = this.nameField.value + " - " + this.versionField.value;
+	} else {
+		this.inferredUsName = this.nameField.value;
+	}
+
+	var vd = g_form.validators.version;
+	if (!vd)
+		console.log("WARNING.  Cannot find validator for version field in parent form.");
+	else {
+		var answer = vd.call(g_form, this.versionField.value);
+		if (answer != true) {
+			alert(answer);
+			return null;
+		}
+	}
+	if (this.existingVersions.indexOf('|' + versionField.value + '|') != -1) {
+		alert('Version ' + versionField.value + ' has already been published to the Collaboration Store');
+		return null;
+	}
+
+	var ga = new GlideAjax('com.snc.apps.AppsAjaxProcessor');
+	ga.addParam('sysparm_function', 'createUpdateSet');
+	ga.addParam('sysparm_name', nameField.value);
+	ga.addParam('sysparm_appid', '$[sysparm_sys_id]');
+	ga.addParam('sysparm_description', this.descriptionField.value);
+	ga.addParam('sysparm_current', 'false');
+	ga.getXML(function (response) {
+		var updateSetId = response.responseXML.documentElement.getAttribute("answer");
+		publishApp(updateSetId);
+		return false;
+	});
+}
+
+function publishApp(updateSetId) {
+	var dd = new GlideModal("hierarchical_progress_viewer");
+	dd.on("beforeclose", function () {
+		var dialogClass = GlideModal ? GlideModal : GlideDialogWindow;
+		var dd2 = new dialogClass("x_11556_col_store_publish_app_dialog_cs_2");
+		dd2.setTitle(new GwtMessage().getMessage('Publish to Collaboration Store'));
+		dd2.setPreference('sysparm_mbr_app_id', mbrAppId);
+		dd2.setPreference('sysparm_app_sys_id', '$[sysparm_sys_id]');
+		dd2.setPreference('sysparm_upd_set_id', updateSetId);
+		dd2.setWidth(500);
+		dd2.render();
+	});
+
+	dd.setTitle("Progress");
+	dd.setPreference('sysparm_function', 'publishToUpdateSet');
+	dd.setPreference('sysparm_update_set_id', updateSetId);
+	dd.setPreference('sysparm_sys_id', '$[sysparm_sys_id]');
+	dd.setPreference('sysparm_name', this.inferredUsName);
+	dd.setPreference('sysparm_version', this.versionField.value);
+	dd.setPreference('sysparm_description', this.descriptionField.value);
+	dd.setPreference('sysparm_include_data', this.includeDataField.checked);
+	dd.setPreference('sysparm_progress_name', "Publishing application");
+	dd.setPreference('sysparm_ajax_processor', 'com.snc.apps.AppsAjaxProcessor');
+	dd.setPreference('sysparm_show_done_button', 'true');
+
+	dd.render();
+	GlideDialogWindow.get().destroy();
+
+	return dd;
+}
+
+function onCancel() {
+	GlideDialogWindow.get().destroy();
+}
+
+
+$('publish_to_update_set_dialog_container').observe('click',
+function (event) {
+	var elem = event.element();
+	if (elem.id == 'update_set_name') {
+		elem.focus();
+		elem.select();
+	}
+}
+);
+
+$('publish_to_update_set_dialog_container').observe('keyup',
+function (event) {
+	if (event.keyCode == 13)  // enter
+		$('ok_button').click();
+}
+);
+
+var appVersionField = $('app_version');
+appVersionField.focus();]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint/>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="true" xmlns:j="jelly:core" xmlns:g="glide" xmlns:g2="null">
+ 
+<g2:evaluate jelly="true">
+ 
+var existingVersions = '';
+var mbrAppId = jelly.sysparm_mbr_app_id;
+var appSysId = jelly.sysparm_app_sys_id;
+var updSetId = jelly.sysparm_upd_set_id;
+var appAction = 'Updating';
+if (mbrAppId == 'new') {
+    appAction = 'Creating';
+}
+ 
+</g2:evaluate>
+ 
+<g:ui_form>
+	
+    <style type="text/css">
+        #publish_to_update_set_dialog_container input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        #publish_to_update_set_dialog_container label {
+            text-align: right;
+        }
+    </style>
+
+    <div id="publish_to_collaboration_store_dialog_container">
+        <div class="modal-body">
+            ${gs.getMessage('Creating Catalog Item. ..')}
+            <input id="mbr_app_id" type="hidden" value="$[mbrAppId]"/>
+            <input id="app_sys_id" type="hidden" value="$[appSysId]"/>
+            <input id="upd_set_id" type="hidden" value="$[updSetId]"/>
+        </div>
+ 
+        <div style="padding-left: 50px;">
+            <div class="row" id="phase_1">
+                <image id="loading_1" src="/images/loading_anim4.gif" style="width: 16px; height: 16px;"/>
+                <image id="success_1" src="/images/outputmsg_success_24.gif" style="width: 16px; height: 16px; visibility: hidden; display: none;"/>
+                <image id="error_1" src="/images/outputmsg_error_24.gif" style="width: 16px; height: 16px; visibility: hidden; display: none;"/>
+                <span style="margin-left: 10px; font-weight:bold;">
+                   Creating catalog item
+                </span>
+            </div>
+            <div class="row" id="phase_2" style="visibility: hidden; display: none;">
+                <image id="loading_2" src="/images/loading_anim4.gif" style="width: 16px; height: 16px;"/>
+                <image id="success_2" src="/images/outputmsg_success_24.gif" style="width: 16px; height: 16px; visibility: hidden; display: none;"/>
+                <image id="error_2" src="/images/outputmsg_error_24.gif" style="width: 16px; height: 16px; visibility: hidden; display: none;"/>
+                <span style="margin-left: 10px; font-weight:bold;">
+                    Creating variables
+                </span>
+            </div>
+            <div class="row" id="phase_3" style="visibility: hidden; display: none;">
+                <image id="loading_3" src="/images/loading_anim4.gif" style="width: 16px; height: 16px;"/>
+                <image id="success_3" src="/images/outputmsg_success_24.gif" style="width: 16px; height: 16px; visibility: hidden; display: none;"/>
+                <image id="error_3" src="/images/outputmsg_error_24.gif" style="width: 16px; height: 16px; visibility: hidden; display: none;"/>
+                <span style="margin-left: 10px; font-weight:bold;">
+                    Creating visibility criterias
+                </span>
+            </div>
+            <div class="row" id="phase_4" style="visibility: hidden; display: none;">
+                <image id="loading_4" src="/images/loading_anim4.gif" style="width: 16px; height: 16px;"/>
+                <image id="success_4" src="/images/outputmsg_success_24.gif" style="width: 16px; height: 16px; visibility: hidden; display: none;"/>
+                <image id="error_4" src="/images/outputmsg_error_24.gif" style="width: 16px; height: 16px; visibility: hidden; display: none;"/>
+                <span style="margin-left: 10px; font-weight:bold;">
+                    Step 4
+                </span>
+            </div>
+            <div class="row" id="phase_5" style="visibility: hidden; display: none;">
+                <image id="loading_5" src="/images/loading_anim4.gif" style="width: 16px; height: 16px;"/>
+                <image id="success_5" src="/images/outputmsg_success_24.gif" style="width: 16px; height: 16px; visibility: hidden; display: none;"/>
+                <image id="error_5" src="/images/outputmsg_error_24.gif" style="width: 16px; height: 16px; visibility: hidden; display: none;"/>
+                <span style="margin-left: 10px; font-weight:bold;">
+                    Step 5
+                </span>
+            </div>
+            <div class="row" id="phase_6" style="visibility: hidden; display: none;">
+                <image id="loading_6" src="/images/loading_anim4.gif" style="width: 16px; height: 16px;"/>
+                <image id="success_6" src="/images/outputmsg_success_24.gif" style="width: 16px; height: 16px; visibility: hidden; display: none;"/>
+                <image id="error_6" src="/images/outputmsg_error_24.gif" style="width: 16px; height: 16px; visibility: hidden; display: none;"/>
+                <span style="margin-left: 10px; font-weight:bold;">
+                    Step 6
+                </span>
+            </div>
+        </div>
+    </div>
+</g:ui_form>
+</j:jelly>]]></html>
+        <name>my_custom_accelerator</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-12 10:49:29</sys_created_on>
+        <sys_id>876ba63e07a941105d4cf0ef7c1ed056</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>my_custom_accelerator</sys_name>
+        <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
+        <sys_update_name>sys_ui_page_876ba63e07a941105d4cf0ef7c1ed056</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-12 12:22:51</sys_updated_on>
+    </sys_ui_page>
+</record_update>

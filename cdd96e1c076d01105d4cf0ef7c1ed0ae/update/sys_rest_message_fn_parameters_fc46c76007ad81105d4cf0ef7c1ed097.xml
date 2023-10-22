@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>batch_update_values_request_body</name>
+        <rest_message_function display_value="Update Template - spreadsheetsValuesBatchUpdate">2cb5cf68076d81105d4cf0ef7c1ed058</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-05 13:00:26</sys_created_on>
+        <sys_id>fc46c76007ad81105d4cf0ef7c1ed097</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>batch_update_values_request_body</sys_name>
+        <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_fc46c76007ad81105d4cf0ef7c1ed097</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-21 15:05:47</sys_updated_on>
+        <type>string</type>
+        <value>{
+  "data": [
+    {
+      "range": "Sheet1!B1:B3",
+      "values": [
+        [
+          "TEST ITILE"
+        ],
+        [
+          "TEST SubTitle"
+        ],
+        [
+          "TEST Description"
+        ]
+      ]
+    },
+    {
+      "range": "Sheet1!D6",
+      "values": [
+        [
+          "Testing"
+        ]
+      ]
+    },
+    {
+      "range": "Sheet1!A9:D9",
+      "values": [
+        [
+          "Variable 1",
+          "Selectbox",
+          "Option1,Option2,Option3",
+          "Option2"
+        ]
+      ]
+    }
+  ],
+  "valueInputOption": "RAW"
+}</value>
+    </sys_rest_message_fn_parameters>
+</record_update>

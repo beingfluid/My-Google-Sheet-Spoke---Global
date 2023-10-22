@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="dest_spreadsheet" label="dest_spreadsheet" language="en" table="var__m_sys_hub_step_ext_output_29b0aab6076941105d4cf0ef7c1ed050">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>dest_spreadsheet</element>
+            <help/>
+            <hint/>
+            <label>dest_spreadsheet</label>
+            <language>en</language>
+            <name>var__m_sys_hub_step_ext_output_29b0aab6076941105d4cf0ef7c1ed050</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-02-12 10:12:17</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>dest_spreadsheet</sys_name>
+            <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_29b0aab6076941105d4cf0ef7c1ed050_dest_spreadsheet_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-02-12 10:12:17</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

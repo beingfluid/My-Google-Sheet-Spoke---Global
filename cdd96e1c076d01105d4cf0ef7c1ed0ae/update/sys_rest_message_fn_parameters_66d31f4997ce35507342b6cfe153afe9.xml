@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="INSERT_OR_UPDATE">
+        <name>starred </name>
+        <rest_message_function display_value="Create Folder">e892578d978e35507342b6cfe153af09</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-10-21 12:21:37</sys_created_on>
+        <sys_id>66d31f4997ce35507342b6cfe153afe9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>starred </sys_name>
+        <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_66d31f4997ce35507342b6cfe153afe9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-10-21 12:22:10</sys_updated_on>
+        <type>string</type>
+        <value>true</value>
+    </sys_rest_message_fn_parameters>
+</record_update>

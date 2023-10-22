@@ -8,7 +8,6 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build>glide-rome-06-23-2021__patch5-12-15-2021_01-04-2022_2221.zip</compiler_build>
         <copied_from>079fd260076981105d4cf0ef7c1ed0a7</copied_from>
         <copied_from_name>mygooglesheetspokeglobal Read Ac</copied_from_name>
         <description/>
@@ -20,6 +19,7 @@
         <natlang/>
         <outputs/>
         <outputs/>
+        <pre_compiled>false</pre_compiled>
         <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>87b2e26c076981105d4cf0ef7c1ed08f</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>mygooglesheetspokeglobal Read Write Action</sys_name>
         <sys_overrides/>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_87b2e26c076981105d4cf0ef7c1ed08f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-02-05 10:47:14</sys_updated_on>
+        <sys_updated_on>2023-10-21 05:45:55</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -194,18 +194,6 @@
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=2ac3e2ec076981105d4cf0ef7c1ed08c"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>2ac3e2ec076981105d4cf0ef7c1ed08c</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-02-05 10:29:50</sys_created_on>
-        <sys_id>72c3e2ec076981105d4cf0ef7c1ed0aa</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-02-05 10:29:50</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>miles</field>
         <id>2ac3e2ec076981105d4cf0ef7c1ed08c</id>
         <sys_created_by>admin</sys_created_by>
@@ -216,18 +204,6 @@
         <sys_updated_on>2022-02-05 10:29:50</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_2ac3e2ec076981105d4cf0ef7c1ed08c</table>
         <value>{{action.miles}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>2ac3e2ec076981105d4cf0ef7c1ed08c</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-02-05 10:29:50</sys_created_on>
-        <sys_id>36c3e2ec076981105d4cf0ef7c1ed0aa</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-02-05 10:29:50</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>tier</field>
@@ -243,6 +219,7 @@
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_2ac3e2ec076981105d4cf0ef7c1ed08c^id=2ac3e2ec076981105d4cf0ef7c1ed08c"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=2ac3e2ec076981105d4cf0ef7c1ed08c"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=2ac3e2ec076981105d4cf0ef7c1ed08c"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=2ac3e2ec076981105d4cf0ef7c1ed08c^sys_idNOT IN72c3e2ec076981105d4cf0ef7c1ed09a,b2c3e2ec076981105d4cf0ef7c1ed094"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -275,6 +252,7 @@
         <element>tier</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -321,6 +299,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -356,6 +335,7 @@
         <element>miles</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -402,6 +382,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -438,6 +419,7 @@
         <element>valuerange</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -484,10 +466,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2ac3e2ec076981105d4cf0ef7c1ed08c"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_2ac3e2ec076981105d4cf0ef7c1ed08c^sys_idNOT IN36c3e2ec076981105d4cf0ef7c1ed0a5"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>valuerange</element>
@@ -502,11 +486,11 @@
         <sys_created_on>2022-02-05 10:29:50</sys_created_on>
         <sys_id>36c3e2ec076981105d4cf0ef7c1ed0a5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>valuerange</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_2ac3e2ec076981105d4cf0ef7c1ed08c_valuerange_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:29:50</sys_updated_on>
         <url/>
@@ -821,6 +805,8 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=33946e2007a981105d4cf0ef7c1ed00a"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=33946e2007a981105d4cf0ef7c1ed00a"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=33946e2007a981105d4cf0ef7c1ed00a^sys_idNOT IN40a46e2007a981105d4cf0ef7c1ed032"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -853,6 +839,7 @@
         <element>sn_auth_token</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -899,10 +886,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=33946e2007a981105d4cf0ef7c1ed00a"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_33946e2007a981105d4cf0ef7c1ed00a^sys_idNOT IN08a46e2007a981105d4cf0ef7c1ed037"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>sn_auth_token</element>
@@ -917,11 +906,11 @@
         <sys_created_on>2022-02-05 10:33:28</sys_created_on>
         <sys_id>08a46e2007a981105d4cf0ef7c1ed037</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Credential Value</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_33946e2007a981105d4cf0ef7c1ed00a_sn_auth_token_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:33:28</sys_updated_on>
         <url/>
@@ -1198,6 +1187,8 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=cbb2e26c076981105d4cf0ef7c1ed0a4"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=cbb2e26c076981105d4cf0ef7c1ed0a4"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=cbb2e26c076981105d4cf0ef7c1ed0a4^sys_idNOT IN1bb2e26c076981105d4cf0ef7c1ed0d1"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1230,6 +1221,7 @@
         <element>sn_auth_token</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1276,10 +1268,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cbb2e26c076981105d4cf0ef7c1ed0a4"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_cbb2e26c076981105d4cf0ef7c1ed0a4^sys_idNOT IN1bb2e26c076981105d4cf0ef7c1ed0d7"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>sn_auth_token</element>
@@ -1294,11 +1288,11 @@
         <sys_created_on>2022-02-05 10:25:13</sys_created_on>
         <sys_id>1bb2e26c076981105d4cf0ef7c1ed0d7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Credential Value</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_cbb2e26c076981105d4cf0ef7c1ed0a4_sn_auth_token_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:25:13</sys_updated_on>
         <url/>
@@ -1360,18 +1354,6 @@
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=ef25ae6007a981105d4cf0ef7c1ed049"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>ef25ae6007a981105d4cf0ef7c1ed049</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-02-05 10:35:54</sys_created_on>
-        <sys_id>7b25ae6007a981105d4cf0ef7c1ed069</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-02-05 10:35:54</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>responseBody</field>
         <id>ef25ae6007a981105d4cf0ef7c1ed049</id>
         <sys_created_by>admin</sys_created_by>
@@ -1383,20 +1365,9 @@
         <table>var__m_sys_hub_step_ext_input_ef25ae6007a981105d4cf0ef7c1ed049</table>
         <value>{{step[a5834e0f-51f3-405d-8931-6f0a36f699d7].response_body}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>ef25ae6007a981105d4cf0ef7c1ed049</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-02-05 10:35:54</sys_created_on>
-        <sys_id>3f25ae6007a981105d4cf0ef7c1ed069</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-02-05 10:35:54</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_ef25ae6007a981105d4cf0ef7c1ed049^id=ef25ae6007a981105d4cf0ef7c1ed049"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=ef25ae6007a981105d4cf0ef7c1ed049"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=ef25ae6007a981105d4cf0ef7c1ed049"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=ef25ae6007a981105d4cf0ef7c1ed049^sys_idNOT IN2f25ae6007a981105d4cf0ef7c1ed059"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1429,6 +1400,7 @@
         <element>responseBody</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1475,6 +1447,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1511,6 +1484,7 @@
         <element>points</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1557,10 +1531,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ef25ae6007a981105d4cf0ef7c1ed049"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_ef25ae6007a981105d4cf0ef7c1ed049^sys_idNOT INb725ae6007a981105d4cf0ef7c1ed065"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>points</element>
@@ -1575,11 +1551,11 @@
         <sys_created_on>2022-02-05 10:35:54</sys_created_on>
         <sys_id>b725ae6007a981105d4cf0ef7c1ed065</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>points</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_ef25ae6007a981105d4cf0ef7c1ed049_points_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:35:54</sys_updated_on>
         <url/>
@@ -1617,6 +1593,7 @@
         <element>spreadsheetid</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1663,10 +1640,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=43b2e26c076981105d4cf0ef7c1ed096"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1698,6 +1677,7 @@
         <element>tier</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1744,10 +1724,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6ac3e2ec076981105d4cf0ef7c1ed083"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1779,6 +1761,7 @@
         <element>miles</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1825,10 +1808,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a6c3e2ec076981105d4cf0ef7c1ed06f"/>
     <sys_hub_action_output action="delete_multiple" query="model=87b2e26c076981105d4cf0ef7c1ed08f^sys_idNOT IN17b2e26c076981105d4cf0ef7c1ed0f7,95b5eea007a981105d4cf0ef7c1ed071,dbb2e26c076981105d4cf0ef7c1ed0ff"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1862,6 +1847,7 @@
         <element_prototype/>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1909,10 +1895,13 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=17b2e26c076981105d4cf0ef7c1ed0f7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=17b2e26c076981105d4cf0ef7c1ed0f7"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1945,6 +1934,7 @@
         <element_prototype/>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1992,10 +1982,13 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=95b5eea007a981105d4cf0ef7c1ed071"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=95b5eea007a981105d4cf0ef7c1ed071"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2028,6 +2021,7 @@
         <element_prototype/>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2075,10 +2069,14 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dbb2e26c076981105d4cf0ef7c1ed0ff"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=dbb2e26c076981105d4cf0ef7c1ed0ff"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=87b2e26c076981105d4cf0ef7c1ed08f"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=87b2e26c076981105d4cf0ef7c1ed08f^sys_idNOT INa3b2266c076981105d4cf0ef7c1ed010"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
         <action_type_id display_value="mygooglesheetspokeglobal Read Write Action">87b2e26c076981105d4cf0ef7c1ed08f</action_type_id>
@@ -2089,6 +2087,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:25:14</sys_updated_on>
     </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=a3b2266c076981105d4cf0ef7c1ed010"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_87b2e26c076981105d4cf0ef7c1ed08f^sys_idNOT IN43b2e26c076981105d4cf0ef7c1ed0a2,6ac3e2ec076981105d4cf0ef7c1ed089,a2c3e2ec076981105d4cf0ef7c1ed082"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>spreadsheetid</element>
@@ -2103,11 +2102,11 @@
         <sys_created_on>2022-02-05 10:25:13</sys_created_on>
         <sys_id>43b2e26c076981105d4cf0ef7c1ed0a2</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>spreadsheetId</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_87b2e26c076981105d4cf0ef7c1ed08f_spreadsheetid_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:25:13</sys_updated_on>
         <url/>
@@ -2126,11 +2125,11 @@
         <sys_created_on>2022-02-05 10:29:49</sys_created_on>
         <sys_id>6ac3e2ec076981105d4cf0ef7c1ed089</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>tier</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_87b2e26c076981105d4cf0ef7c1ed08f_tier_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:29:49</sys_updated_on>
         <url/>
@@ -2149,16 +2148,17 @@
         <sys_created_on>2022-02-05 10:29:49</sys_created_on>
         <sys_id>a2c3e2ec076981105d4cf0ef7c1ed082</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>miles</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_87b2e26c076981105d4cf0ef7c1ed08f_miles_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:29:49</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_87b2e26c076981105d4cf0ef7c1ed08f"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_87b2e26c076981105d4cf0ef7c1ed08f^sys_idNOT IN17b2e26c076981105d4cf0ef7c1ed0fe,59b5eea007a981105d4cf0ef7c1ed077,dbb2266c076981105d4cf0ef7c1ed00a"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__action_status__</element>
@@ -2173,11 +2173,11 @@
         <sys_created_on>2022-02-05 10:25:14</sys_created_on>
         <sys_id>17b2e26c076981105d4cf0ef7c1ed0fe</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_87b2e26c076981105d4cf0ef7c1ed08f___action_status___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:25:14</sys_updated_on>
         <url/>
@@ -2196,11 +2196,11 @@
         <sys_created_on>2022-02-05 10:38:11</sys_created_on>
         <sys_id>59b5eea007a981105d4cf0ef7c1ed077</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>calculated_points</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_87b2e26c076981105d4cf0ef7c1ed08f_variable_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:38:11</sys_updated_on>
         <url/>
@@ -2219,16 +2219,17 @@
         <sys_created_on>2022-02-05 10:25:14</sys_created_on>
         <sys_id>dbb2266c076981105d4cf0ef7c1ed00a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_87b2e26c076981105d4cf0ef7c1ed08f___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:25:14</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_87b2e26c076981105d4cf0ef7c1ed08f"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=87b2e26c076981105d4cf0ef7c1ed08f^sys_idNOT IN56c566e007a981105d4cf0ef7c1ed016"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="mygooglesheetspokeglobal Read Write Action">87b2e26c076981105d4cf0ef7c1ed08f</action_id>
@@ -2420,18 +2421,6 @@
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=24c5a2e007a981105d4cf0ef7c1ed053"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>24c5a2e007a981105d4cf0ef7c1ed053</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-02-05 10:38:26</sys_created_on>
-        <sys_id>f0c5a2e007a981105d4cf0ef7c1ed067</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-02-05 10:38:26</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>responseBody</field>
         <id>24c5a2e007a981105d4cf0ef7c1ed053</id>
         <sys_created_by>admin</sys_created_by>
@@ -2443,20 +2432,9 @@
         <table>var__m_sys_hub_step_ext_input_24c5a2e007a981105d4cf0ef7c1ed053</table>
         <value>{{step[a5834e0f-51f3-405d-8931-6f0a36f699d7].response_body}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>24c5a2e007a981105d4cf0ef7c1ed053</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-02-05 10:38:26</sys_created_on>
-        <sys_id>b4c5a2e007a981105d4cf0ef7c1ed067</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-02-05 10:38:26</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_24c5a2e007a981105d4cf0ef7c1ed053^id=24c5a2e007a981105d4cf0ef7c1ed053"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=24c5a2e007a981105d4cf0ef7c1ed053"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=24c5a2e007a981105d4cf0ef7c1ed053"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=24c5a2e007a981105d4cf0ef7c1ed053^sys_idNOT INe4c5a2e007a981105d4cf0ef7c1ed056"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -2489,6 +2467,7 @@
         <element>responseBody</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2535,6 +2514,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2571,6 +2551,7 @@
         <element>points</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2617,10 +2598,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=24c5a2e007a981105d4cf0ef7c1ed053"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_24c5a2e007a981105d4cf0ef7c1ed053^sys_idNOT IN74c5a2e007a981105d4cf0ef7c1ed063"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>points</element>
@@ -2635,11 +2618,11 @@
         <sys_created_on>2022-02-05 10:38:26</sys_created_on>
         <sys_id>74c5a2e007a981105d4cf0ef7c1ed063</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>points</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_24c5a2e007a981105d4cf0ef7c1ed053_points_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:38:26</sys_updated_on>
         <url/>
@@ -2954,6 +2937,8 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=54c562e007a981105d4cf0ef7c1ed0df"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=54c562e007a981105d4cf0ef7c1ed0df"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=54c562e007a981105d4cf0ef7c1ed0df^sys_idNOT INd0c562e007a981105d4cf0ef7c1ed0e6"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -2986,6 +2971,7 @@
         <element>sn_auth_token</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3032,10 +3018,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=54c562e007a981105d4cf0ef7c1ed0df"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_54c562e007a981105d4cf0ef7c1ed0df^sys_idNOT IN1cc562e007a981105d4cf0ef7c1ed0eb"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>sn_auth_token</element>
@@ -3050,11 +3038,11 @@
         <sys_created_on>2022-02-05 10:38:24</sys_created_on>
         <sys_id>1cc562e007a981105d4cf0ef7c1ed0eb</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Credential Value</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_54c562e007a981105d4cf0ef7c1ed0df_sn_auth_token_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:38:24</sys_updated_on>
         <url/>
@@ -3133,18 +3121,6 @@
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=84c562e007a981105d4cf0ef7c1ed0b2"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>84c562e007a981105d4cf0ef7c1ed0b2</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-02-05 10:38:24</sys_created_on>
-        <sys_id>10c562e007a981105d4cf0ef7c1ed0db</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-02-05 10:38:24</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>miles</field>
         <id>84c562e007a981105d4cf0ef7c1ed0b2</id>
         <sys_created_by>admin</sys_created_by>
@@ -3155,18 +3131,6 @@
         <sys_updated_on>2022-02-05 10:38:24</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_84c562e007a981105d4cf0ef7c1ed0b2</table>
         <value>{{action.miles}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>84c562e007a981105d4cf0ef7c1ed0b2</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2022-02-05 10:38:24</sys_created_on>
-        <sys_id>d0c562e007a981105d4cf0ef7c1ed0db</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-02-05 10:38:24</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>tier</field>
@@ -3182,6 +3146,7 @@
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_84c562e007a981105d4cf0ef7c1ed0b2^id=84c562e007a981105d4cf0ef7c1ed0b2"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=84c562e007a981105d4cf0ef7c1ed0b2"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=84c562e007a981105d4cf0ef7c1ed0b2"/>
     <sys_hub_step_ext_input action="delete_multiple" query="model=84c562e007a981105d4cf0ef7c1ed0b2^sys_idNOT IN5cc562e007a981105d4cf0ef7c1ed0b5,98c562e007a981105d4cf0ef7c1ed0c9"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -3214,6 +3179,7 @@
         <element>miles</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3260,6 +3226,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3295,6 +3262,7 @@
         <element>tier</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3341,6 +3309,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -3377,6 +3346,7 @@
         <element>valuerange</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3423,10 +3393,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=84c562e007a981105d4cf0ef7c1ed0b2"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_84c562e007a981105d4cf0ef7c1ed0b2^sys_idNOT IN94c562e007a981105d4cf0ef7c1ed0d6"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>valuerange</element>
@@ -3441,11 +3413,11 @@
         <sys_created_on>2022-02-05 10:38:24</sys_created_on>
         <sys_id>94c562e007a981105d4cf0ef7c1ed0d6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>valuerange</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_84c562e007a981105d4cf0ef7c1ed0b2_valuerange_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:38:24</sys_updated_on>
         <url/>
@@ -3722,6 +3694,8 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=e8c562e007a981105d4cf0ef7c1ed0fa"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=e8c562e007a981105d4cf0ef7c1ed0fa"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=e8c562e007a981105d4cf0ef7c1ed0fa^sys_idNOT IN28c5a2e007a981105d4cf0ef7c1ed001"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -3754,6 +3728,7 @@
         <element>sn_auth_token</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3800,10 +3775,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e8c562e007a981105d4cf0ef7c1ed0fa"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_e8c562e007a981105d4cf0ef7c1ed0fa^sys_idNOT IN24c5a2e007a981105d4cf0ef7c1ed045"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>sn_auth_token</element>
@@ -3818,11 +3795,11 @@
         <sys_created_on>2022-02-05 10:38:25</sys_created_on>
         <sys_id>24c5a2e007a981105d4cf0ef7c1ed045</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Credential Value</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_e8c562e007a981105d4cf0ef7c1ed0fa_sn_auth_token_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:38:25</sys_updated_on>
         <url/>
@@ -3860,6 +3837,7 @@
         <element>miles</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3906,10 +3884,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=08c562e007a981105d4cf0ef7c1ed0a2"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -3941,6 +3921,7 @@
         <element>spreadsheetid</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -3987,10 +3968,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=84c562e007a981105d4cf0ef7c1ed095"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4022,6 +4005,7 @@
         <element>tier</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -4068,10 +4052,12 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c8c562e007a981105d4cf0ef7c1ed0a9"/>
     <sys_hub_action_output action="delete_multiple" query="model=0cc562e007a981105d4cf0ef7c1ed091^sys_idNOT IN7cc5a2e007a981105d4cf0ef7c1ed08e,b8c5a2e007a981105d4cf0ef7c1ed082,f4c5a2e007a981105d4cf0ef7c1ed06e"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -4105,6 +4091,7 @@
         <element_prototype/>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -4152,10 +4139,13 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7cc5a2e007a981105d4cf0ef7c1ed08e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7cc5a2e007a981105d4cf0ef7c1ed08e"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4188,6 +4178,7 @@
         <element_prototype/>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -4235,10 +4226,13 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b8c5a2e007a981105d4cf0ef7c1ed082"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b8c5a2e007a981105d4cf0ef7c1ed082"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4271,6 +4265,7 @@
         <element_prototype/>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -4318,10 +4313,14 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f4c5a2e007a981105d4cf0ef7c1ed06e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f4c5a2e007a981105d4cf0ef7c1ed06e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=0cc562e007a981105d4cf0ef7c1ed091"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=0cc562e007a981105d4cf0ef7c1ed091^sys_idNOT INf8c5a2e007a981105d4cf0ef7c1ed09a"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
         <action_type_id display_value="mygooglesheetspokeglobal Read Write Action">0cc562e007a981105d4cf0ef7c1ed091</action_type_id>
@@ -4332,6 +4331,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:38:26</sys_updated_on>
     </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=f8c5a2e007a981105d4cf0ef7c1ed09a"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_0cc562e007a981105d4cf0ef7c1ed091^sys_idNOT IN04c562e007a981105d4cf0ef7c1ed0a8,40c562e007a981105d4cf0ef7c1ed0a1,c4c562e007a981105d4cf0ef7c1ed0af"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>miles</element>
@@ -4346,11 +4346,11 @@
         <sys_created_on>2022-02-05 10:38:23</sys_created_on>
         <sys_id>04c562e007a981105d4cf0ef7c1ed0a8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>miles</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_0cc562e007a981105d4cf0ef7c1ed091_miles_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:38:23</sys_updated_on>
         <url/>
@@ -4369,11 +4369,11 @@
         <sys_created_on>2022-02-05 10:38:23</sys_created_on>
         <sys_id>40c562e007a981105d4cf0ef7c1ed0a1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>spreadsheetId</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_0cc562e007a981105d4cf0ef7c1ed091_spreadsheetid_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:38:23</sys_updated_on>
         <url/>
@@ -4392,16 +4392,17 @@
         <sys_created_on>2022-02-05 10:38:23</sys_created_on>
         <sys_id>c4c562e007a981105d4cf0ef7c1ed0af</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>tier</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_0cc562e007a981105d4cf0ef7c1ed091_tier_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:38:23</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_0cc562e007a981105d4cf0ef7c1ed091"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_0cc562e007a981105d4cf0ef7c1ed091^sys_idNOT IN78c5a2e007a981105d4cf0ef7c1ed094,b4c5a2e007a981105d4cf0ef7c1ed08d,f0c5a2e007a981105d4cf0ef7c1ed081"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>variable</element>
@@ -4416,11 +4417,11 @@
         <sys_created_on>2022-02-05 10:38:26</sys_created_on>
         <sys_id>78c5a2e007a981105d4cf0ef7c1ed094</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>calculated_points</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_0cc562e007a981105d4cf0ef7c1ed091_variable_en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:38:26</sys_updated_on>
         <url/>
@@ -4439,11 +4440,11 @@
         <sys_created_on>2022-02-05 10:38:26</sys_created_on>
         <sys_id>b4c5a2e007a981105d4cf0ef7c1ed08d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_0cc562e007a981105d4cf0ef7c1ed091___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:38:26</sys_updated_on>
         <url/>
@@ -4462,18 +4463,20 @@
         <sys_created_on>2022-02-05 10:38:26</sys_created_on>
         <sys_id>f0c5a2e007a981105d4cf0ef7c1ed081</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="My Google Sheet Spoke - Global" source="cdd96e1c076d01105d4cf0ef7c1ed0ae">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_package>
         <sys_policy/>
         <sys_scope display_value="My Google Sheet Spoke - Global">cdd96e1c076d01105d4cf0ef7c1ed0ae</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_0cc562e007a981105d4cf0ef7c1ed091___action_status___en</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2022-02-05 10:38:26</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_action_type_definition action="update">
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_0cc562e007a981105d4cf0ef7c1ed091"/>
+    <sys_hub_action_type_definition action="UPDATE">
         <sys_id>87b2e26c076981105d4cf0ef7c1ed08f</sys_id>
         <latest_snapshot>0cc562e007a981105d4cf0ef7c1ed091</latest_snapshot>
+        <compiler_build>glide-rome-06-23-2021__patch5-12-15-2021_01-04-2022_2221.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>
